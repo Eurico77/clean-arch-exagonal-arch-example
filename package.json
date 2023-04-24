@@ -4,6 +4,9 @@
     "name": "Eurico Magalhães",
     "email": "euricomagalhaes61@gmail.com"
   },
+  "scripts": {
+    "lint": "eslint --ext .ts src"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

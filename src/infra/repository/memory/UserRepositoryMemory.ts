@@ -1,5 +1,5 @@
-import UserRepository from "../../../application/repository/UserRepository";
-import User from "../../../domain/entity/User";
+import UserRepository from '../../../application/repository/UserRepository';
+import User from '../../../domain/entity/User';
 
 export default class UserRepositoryMemory implements UserRepository {
   private users: User[] = [];
@@ -8,9 +8,7 @@ export default class UserRepositoryMemory implements UserRepository {
     this.users.push(user);
   }
 
-async getByEmail(email: string): Promise<User | undefined> {
-		return this.users.find((user: User) => user.email.getValue() === email);
-	}
-
- 
+  async getByEmail(email: string): Promise<User | undefined> {
+    return this.users.find((user: User) => user.email.getValue() === email);
+  }
 }
