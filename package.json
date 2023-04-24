@@ -5,7 +5,8 @@
     "email": "euricomagalhaes61@gmail.com"
   },
   "scripts": {
-    "lint": "eslint --ext .ts src"
+    "lint": "eslint --ext .ts src",
+    "test": "jest"
   },
   "version": "1.0.0",
   "main": "index.js",
